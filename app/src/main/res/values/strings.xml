@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Searchable RecyclerView</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_search">Search</string>
+    <string name="search_hint">Enter name</string>
+    <string name="toolbar_title">Animals</string>
+</resources>
