@@ -19,7 +19,8 @@ $connection=mysqli_connect($host,$username,$password,$db);
 		while($row = mysqli_fetch_array($result)){
 			array_push($res, array(
 				"name"=>$row['name'],
-				"location"=>$row['location']));
+				"location"=>$row['location'],
+				"img"=>$row['img']));
 		}
 		//Displaying the array in json format 
 		echo json_encode($res);
