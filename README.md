@@ -10,7 +10,7 @@ Copy the get_animals.php file to your server folder.
 
 Upcoming
 ========
-1. Add images to the list.
+Similar project done with kotlin
 
 ![example](https://github.com/ngangavic/files/blob/master/rvSearch.gif)
 
