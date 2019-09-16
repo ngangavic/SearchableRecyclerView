@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Sep 07, 2019 at 12:22 PM
+-- Generation Time: Sep 16, 2019 at 05:10 PM
 -- Server version: 10.3.16-MariaDB
 -- PHP Version: 7.3.6
 
@@ -31,34 +31,35 @@ SET time_zone = "+00:00";
 CREATE TABLE `animals` (
   `id` int(11) NOT NULL,
   `name` varchar(100) NOT NULL,
-  `location` varchar(100) NOT NULL
+  `location` varchar(100) NOT NULL,
+  `img` varchar(200) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `animals`
 --
 
-INSERT INTO `animals` (`id`, `name`, `location`) VALUES
-(1, 'African WIld Dog', 'Africa'),
-(2, 'Bat', 'Africa'),
-(3, 'Lion ', 'Africa'),
-(4, 'Tigers', 'Asia'),
-(5, 'Kio Fish', 'Asia'),
-(6, 'Parrots', 'S. America'),
-(7, 'Leopards', 'S. America'),
-(8, 'Wolves', 'N. America'),
-(9, 'Moose', 'N. America'),
-(10, 'Penguins', 'Antartica'),
-(11, 'Whales', 'Antartica'),
-(12, 'Seals', 'Antartica'),
-(13, 'Big Bugs', 'S. America'),
-(14, 'Pigeons', 'Europe'),
-(15, 'Horses', 'Europe'),
-(16, 'Sheep', 'Europe'),
-(17, 'Giraffes', 'Africa'),
-(18, 'Kangaroo', 'Australia'),
-(19, 'Dingos', 'Australia'),
-(20, 'Koala Bear', 'Australia');
+INSERT INTO `animals` (`id`, `name`, `location`, `img`) VALUES
+(1, 'African WIld Dog', 'Africa', 'www.android.com/searchRv/african-wild-dog.jpg'),
+(2, 'Bat', 'Africa', 'www.android.com/searchRv/bat.jpg'),
+(3, 'Lion ', 'Africa', 'www.android.com/searchRv/lion.jpeg'),
+(4, 'Tigers', 'Asia', 'www.android.com/searchRv/tiger.jpeg'),
+(5, 'Kio Fish', 'Asia', 'www.android.com/searchRv/kio-fish.jpeg'),
+(6, 'Parrots', 'S. America', 'www.android.com/searchRv/parrot.jpeg'),
+(7, 'Leopards', 'S. America', 'www.android.com/searchRv/leopard.jpeg'),
+(8, 'Wolves', 'N. America', 'www.android.com/searchRv/wolf.jpeg'),
+(9, 'Moose', 'N. America', 'www.android.com/searchRv/mose.jpeg'),
+(10, 'Penguins', 'Antartica', 'www.android.com/searchRv/penguin.jpeg'),
+(11, 'Whales', 'Antartica', 'www.android.com/searchRv/whale.jpeg'),
+(12, 'Seals', 'Antartica', 'www.android.com/searchRv/seal.jpeg'),
+(13, 'Big Bugs', 'S. America', 'www.android.com/searchRv/big-bugs.jpg'),
+(14, 'Pigeons', 'Europe', 'www.android.com/searchRv/pegion.jpeg'),
+(15, 'Horses', 'Europe', 'www.android.com/searchRv/horse.jpeg'),
+(16, 'Sheep', 'Europe', 'www.android.com/searchRv/sheep.jpeg'),
+(17, 'Giraffes', 'Africa', 'www.android.com/searchRv/giraffe.jpeg'),
+(18, 'Kangaroo', 'Australia', 'www.android.com/searchRv/kangaroo.jpeg'),
+(19, 'Dingos', 'Australia', 'www.android.com/searchRv/dingo.jpeg'),
+(20, 'Koala Bear', 'Australia', 'www.android.com/searchRv/koala.jpeg');
 
 --
 -- Indexes for dumped tables
