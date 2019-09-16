@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity implements AnimalsAdapter.An
     AnimalsAdapter adapter;
     SearchView searchView;
     RequestQueue requestQueue;
-    String URL ="http://192.168.0.104/www.android.com/searchRv/get_animals.php";
+    String URL ="http://192.168.74.212/www.android.com/searchRv/get_animals.php";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

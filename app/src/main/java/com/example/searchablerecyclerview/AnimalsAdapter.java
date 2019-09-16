@@ -6,10 +6,14 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Filter;
 import android.widget.Filterable;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.RequestOptions;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -40,7 +44,8 @@ public class AnimalsAdapter extends RecyclerView.Adapter<AnimalsAdapter.MyViewHo
                 }else{
                     List<Animal> filteredList = new ArrayList<>();
                     for(Animal row:animalList){
-                        if(row.getName().toLowerCase().contains(charSequence)){
+//charSequence.toString().toLowerCase();
+                        if(row.getName().toLowerCase().contains(charSequence.toString().toLowerCase())){
                             filteredList.add(row);
                         }
                     }
@@ -72,6 +77,7 @@ public class AnimalsAdapter extends RecyclerView.Adapter<AnimalsAdapter.MyViewHo
         Animal  animal = animalListFiltered.get(position);
         holder.name.setText(animal.getName());
         holder.location.setText(animal.getLocation());
+        Glide.with(context).load(animal.getImage()).apply(RequestOptions.circleCropTransform()).into(holder.imageView);
 
     }
 
@@ -82,11 +88,13 @@ public class AnimalsAdapter extends RecyclerView.Adapter<AnimalsAdapter.MyViewHo
 
     public class MyViewHolder extends RecyclerView.ViewHolder{
         public TextView name,location;
+        public ImageView imageView;
 
         public MyViewHolder(View view){
             super(view);
             name=view.findViewById(R.id.textViewName);
             location=view.findViewById(R.id.textViewLocation);
+            imageView=view.findViewById(R.id.imageView);
 
             view.setOnClickListener(new View.OnClickListener() {
                 @Override
