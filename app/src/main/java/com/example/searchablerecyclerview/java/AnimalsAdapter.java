@@ -1,4 +1,4 @@
-package com.example.searchablerecyclerview;
+package com.example.searchablerecyclerview.java;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -14,6 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
+import com.example.searchablerecyclerview.R;
 
 import java.util.ArrayList;
 import java.util.List;

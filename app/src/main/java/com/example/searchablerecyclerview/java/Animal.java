@@ -1,4 +1,4 @@
-package com.example.searchablerecyclerview;
+package com.example.searchablerecyclerview.java;
 
 public class Animal {
     String name;
